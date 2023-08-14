@@ -6,12 +6,12 @@ import { notification } from "antd";
 const onFinish = (values) => {
   const updateActivityObject = {};
   const time = new Date(values.tiempo_acti.$d);
-    updateActivityObject.nombre_acti = values.nombre_acti;
-    updateActivityObject.descripcion_acti = values.descripcion_acti;
-    updateActivityObject.tiempo_acti = time.toLocaleTimeString('it-IT');
-    updateActivityObject.cal_quemadas_acti = values.cal_quemadas_acti;
-    updateActivityObject.puntos_ot_acti = values.puntos_ot_acti; 
-    create(updateActivityObject, "activity");
+  updateActivityObject.nombre_acti = values.nombre_acti;
+  updateActivityObject.descripcion_acti = values.descripcion_acti;
+  updateActivityObject.tiempo_acti = time.toLocaleTimeString("it-IT");
+  updateActivityObject.cal_quemadas_acti = values.cal_quemadas_acti;
+  updateActivityObject.puntos_ot_acti = values.puntos_ot_acti;
+  create(updateActivityObject, "activity");
   notification.success({
     message: "Actividad creada",
     description: ``,

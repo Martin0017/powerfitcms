@@ -41,14 +41,14 @@ const items = [
       <TrophyOutlined />{" "}
     </NavLink>,
   ),
-  getItem(
+  /*getItem(
     "Ganadores",
     "3",
     <NavLink to={"/winner"}>
       {" "}
       <SmileOutlined />{" "}
     </NavLink>,
-  ),
+  ),*/
   getItem(
     "Actividades",
     "4",
@@ -56,7 +56,7 @@ const items = [
       {" "}
       <DribbbleOutlined />{" "}
     </NavLink>,
-  ),
+  ) /*
   getItem(
     "Registros",
     "5",
@@ -64,15 +64,15 @@ const items = [
       {" "}
       <BookOutlined />{" "}
     </NavLink>,
-  ),
-  getItem(
+  ),*/,
+  /*getItem(
     "Acceso",
     "6",
     <NavLink to={"/admin"}>
       {" "}
       <AntDesignOutlined />{" "}
     </NavLink>,
-  ),
+  ),*/
   getItem(
     "",
     "5",

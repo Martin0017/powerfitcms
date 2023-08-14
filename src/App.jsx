@@ -54,9 +54,10 @@ function App() {
                   <Route path="/activity" element={<Activity />} />
                   <Route path="/admin" element={<Admin />} />
                   <Route path="/register" element={<Register />} />
-                  <Route path="/reward" element={<Reward />} />
-                  <Route path="/user" element={<User />} />
                   <Route path="/winner" element={<Winner />} />
+                  <Route path="/reward" element={<Reward />} />
+
+                  <Route path="/user" element={<User />} />
                 </Routes>
               </div>
             </Layout.Content>
