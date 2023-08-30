@@ -15,13 +15,13 @@ function SignIn() {
 
     try {
       const response = await axios.post(
-        "http://137.184.7.251:3002/loginauth",
+        "http://143.110.159.236:3002/loginauth",
         loginObject,
       );
 
       if (response.data) {
         const { data } = await axios.post(
-          "http://137.184.7.251:3002/login",
+          "http://143.110.159.236:3002/login",
           response.data,
         );
         localStorage.setItem("token", data.access_token);

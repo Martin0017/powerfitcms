@@ -1,1 +1,1 @@
-export const BASE_PATH_DB = "http://137.184.7.251:3001/api_db";
+export const BASE_PATH_DB = "http://143.110.159.236:3001/api_db";
