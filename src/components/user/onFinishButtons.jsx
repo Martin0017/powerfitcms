@@ -13,8 +13,8 @@ const onFinish = (values) => {
   updateUserObject.contrasena_user = `${values.apellido}${values.nacimiento.$y}`;
   updateUserObject.fecha_nacimiento_user = `${values.nacimiento.$y}-${month}-${values.nacimiento.$D}`;
   updateUserObject.genero_user = values.genero;
-  updateUserObject.id_emp = 1;
-  updateUserObject.id_admin = 1;
+  updateUserObject.id_emp = 2;
+  updateUserObject.id_admin = 2;
   create(updateUserObject, "user");
   notification.success({
     message: "Usuario creado",

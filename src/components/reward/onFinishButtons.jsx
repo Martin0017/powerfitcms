@@ -9,8 +9,9 @@ const onFinish = (values) => {
   updaterewardObject.nombre_pre = values.nombre;
   updaterewardObject.descripcion_pre = values.descripcion;
   updaterewardObject.puntos_rq_pre = values.puntos;
+  console.log(updaterewardObject);
   create(updaterewardObject, "reward");
-  window.location.reload();
+  //window.location.reload();
 
   notification.success({
     message: "Premio creado",

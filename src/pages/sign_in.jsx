@@ -4,6 +4,7 @@ import { Button, Form, Input, notification } from "antd";
 import { LockOutlined, UserOutlined, BlockOutlined } from "@ant-design/icons";
 import axios from "axios";
 import "../css/sign_in.css";
+import { BASE_PATH_OAUTH } from "../utils/config";
 
 function SignIn() {
   const onFinish = async (values) => {
@@ -15,13 +16,13 @@ function SignIn() {
 
     try {
       const response = await axios.post(
-        "http://143.110.159.236:3002/loginauth",
+        `${BASE_PATH_OAUTH}/loginauth`,
         loginObject,
       );
 
       if (response.data) {
         const { data } = await axios.post(
-          "http://143.110.159.236:3002/login",
+          `${BASE_PATH_OAUTH}/login`,
           response.data,
         );
         localStorage.setItem("token", data.access_token);
