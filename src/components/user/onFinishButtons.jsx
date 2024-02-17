@@ -15,13 +15,17 @@ const onFinish = (values) => {
   updateUserObject.genero_user = values.genero;
   updateUserObject.id_emp = 2;
   updateUserObject.id_admin = 2;
+  console.log(updateUserObject);
   create(updateUserObject, "user");
   notification.success({
     message: "Usuario creado",
     description: `Notifique al usuario`,
     icon: <SmileOutlined style={{ color: "#108ee9" }} />,
   });
-  window.location.reload();
+  setTimeout(function() {
+    window.location.reload();
+}, 2000);
+  
 };
 
 const onFinishUpdate = (values, selectedRow) => {
